@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+line {
+  stroke: red;
+}
+
+g.group0 path {
+  stroke: tomato;
+  fill: none;
+}
+
+g.group1 path {
+  stroke: tomato;
+  fill: none;
+}
+
+g.group2 path {
+  stroke: tomato;
+  fill: none;
+}
+
+g.group3 path {
+  stroke: tomato;
+  fill: none;
+}
+
+g.group4 path {
+  stroke: tomato;
+  fill: none;
+}
+
+g.group5 path {
+  stroke: tomato;
+  fill: none;
+}
+
+.grp0 {
+  fill: blue;
+}
+
+.grp1 {
+  fill: #3333ff;
+}
+
+.grp2 {
+  fill: #6666ff;
+}
+
+.grp3 {
+  fill: #9999ff;
+}
+
+.grp4 {
+  fill: #ccccff;
+}
+
+.grp5 {
+  fill: white;
+}
+
+.grp6 {
+  fill: white;
+}

@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+line {
+    stroke: red;
+}
+@for $i from 0 through 5 {
+    g {
+        &.group#{$i} {
+            path {
+                stroke: tomato;
+                fill: none;
+            }
+            // circle {
+            //     fill: blue;
+            // }
+        }
+    }
+}
+
+@for $i from 0 through 6 {
+    $percent:$i*10;
+        .grp#{$i} {
+          
+             fill: lighten(blue,$percent);
+
+        }
+    
+}
