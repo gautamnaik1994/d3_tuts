@@ -37,3 +37,15 @@ line {
         }
     
 }
+g{
+    &.tick{
+        line{
+            stroke:blue;
+        }
+        text{
+            font-size: 12px;
+            fill:purple;
+        }
+    }
+
+}

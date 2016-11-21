@@ -77,3 +77,12 @@ g.group5 path {
 .grp6 {
   fill: white;
 }
+
+g.tick line {
+  stroke: blue;
+}
+
+g.tick text {
+  font-size: 12px;
+  fill: purple;
+}
