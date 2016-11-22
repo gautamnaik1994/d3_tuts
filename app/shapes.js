@@ -67,6 +67,7 @@ var Shapes = function() {
         });
 
 
+
     var textArray = ['start', 'delete', 'end'];
 
     svg.append("text").selectAll('tspan')
