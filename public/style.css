@@ -86,3 +86,7 @@ g.tick text {
   font-size: 12px;
   fill: purple;
 }
+
+g.hidden line, g.hidden path {
+  display: none;
+}

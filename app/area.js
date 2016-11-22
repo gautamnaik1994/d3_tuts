@@ -4,17 +4,22 @@ var Area = function() {
     var dataArray = [12, 17, 20, 25, 35, 47, 55, 64, 72, 87, 99, 110, 130, 140, 160, 175, 180];
     var dataYears = ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016']
 
-    var parseDate=d3.timeParse("%Y");
+    var parseDate = d3.timeParse("%Y");
 
 
     var height = 200,
         width = 500;
 
-    var margin = { left: 50, right: 50, top: 40, bottom: 0 };
+    var margin = {
+        left: 50,
+        right: 50,
+        top: 40,
+        bottom: 0
+    };
     var y = d3.scaleLinear().domain([0, d3.max(dataArray)])
         .range([height, 0]);
 
-    var x = d3.scaleTime().domain(d3.extent(dataYears,function (d) {
+    var x = d3.scaleTime().domain(d3.extent(dataYears, function(d) {
         return parseDate(d);
     })).range([0, width]);
 
@@ -41,7 +46,7 @@ var Area = function() {
         .call(yAxis);
     chartGroup.append('g')
         .attr('class', "axis x")
-        .attr("transform","translate(0,"+height+")")
+        .attr("transform", "translate(0," + height + ")")
         .call(xAxis);
 
 }
